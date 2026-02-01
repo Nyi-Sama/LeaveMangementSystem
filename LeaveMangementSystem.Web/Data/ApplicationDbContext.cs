@@ -9,5 +9,7 @@ namespace LeaveMangementSystem.Web.Data
             : base(options)
         {
         }
+
+        public DbSet<LeaveType> leaveTypes { get; set; }
     }
 }
