@@ -39,7 +39,7 @@ namespace LeaveMangementSystem.Web.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("leaveTypes");
+                    b.ToTable("leaveTypes", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
