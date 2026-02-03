@@ -7,10 +7,11 @@ namespace LeaveMangementSystem.Web.Data
     {
         public int Id { get; set; }
 
-        [Display(Name = "Type your leave name")]
+        [Display(Name = "Leave Type")]
         [Column(TypeName = "nvarchar(150)")]
         public string Name { get; set; }
 
+        [Display(Name = "Number of Days")]
         public int NumberOfDays { get; set; }
     }
 }
