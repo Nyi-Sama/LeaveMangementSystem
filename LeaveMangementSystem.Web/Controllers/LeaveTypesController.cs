@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,6 +12,7 @@ using LeaveMangementSystem.Web.Services;
 
 namespace LeaveMangementSystem.Web.Controllers
 {
+    [Authorize(Roles = RoleConstants.Administrator)]
     public class LeaveTypesController(ILeaveTypeServices _ILeaveTypeServices) : Controller
     {
         private static string NameExistMsg = "Leave Type already exists!";
